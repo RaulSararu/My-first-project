@@ -1,0 +1,217 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(35, 77, 35);
+}
+
+nav {
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 60px;
+  list-style-type: none;
+}
+
+.item {
+  font-size: 2rem;
+  margin-right: 50px;
+  align-content: center;
+}
+
+.item:hover {
+  background-color: rgb(216, 215, 149);
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+
+
+#planet {
+  width: 30%;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+}
+
+.firstp {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+}
+
+.firstrow,
+.secondrow,
+.thirdrow {
+  display: flex;
+  margin: 10%;
+}
+
+.firstrow div,
+.secondrow div,
+.thirdrow div {
+  width: 100%;
+  height: 400px;
+}
+
+#water {
+  width: 70%;
+  padding: 10px;
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#air {
+  width: 70%;
+  padding: 10px;
+}
+
+p,
+h1,
+h2 {
+  color: white;
+}
+
+#plastic {
+  width: 70%;
+  padding: 10px;
+}
+
+p {
+  padding: 15px;
+  text-align: center;
+}
+
+.container1 p,
+.container p {
+  font-size: 1.3rem;
+}
+
+.container1 {
+  margin-top: 50px;
+}
+
+p:not(:first-child):first-letter {
+  font-size: 2rem;
+}
+
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  list-style-position: inside;
+  line-height: 30px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.container2 > h2 {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 2rem;
+}
+
+.line p {
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: rgb(0, 0, 7);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.socialmedia {
+  display: flex;
+}
+
+.socialmedia div {
+  margin-right: 50px;
+}
+
+footer a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .firstrow,
+  .secondrow,
+  .thirdrow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  #water,
+  #air,
+  #plastic {
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p:not(:first-child):first-letter {
+    font-size: 2rem;
+  }
+
+  .firstp {
+    font-size: 0.5rem;
+  }
+}
